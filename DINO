@@ -1,0 +1,397 @@
+import turtle
+import random
+import math
+
+
+#WENDEL
+#MODIFICAR LA SORPRESA DEL DINO EN SU MÓDULO
+
+def escalarD(n,k):
+    t.setheading(90)
+    for i in range(n):
+        t.forward(k)
+        t.right(90)
+        t.forward(k)
+        t.left(90)
+    
+def escalarI(n,k):
+    t.setheading(90)
+    for i in range(n):
+        t.forward(k)
+        t.left(90)
+        t.forward(k)
+        t.right(90)
+def bajarD(n,k):
+    t.setheading(270)
+    for i in range(n):
+        t.forward(k)
+        t.left(90)
+        t.forward(k)
+        t.right(90)
+def bajarI(n,k):
+    t.setheading(270)
+    for i in range(n):
+        t.forward(k)
+        t.right(90)
+        t.forward(k)
+        t.left(90)
+def avanzarD(n,k):
+    t.setheading(0)
+    t.forward(n*k)
+    
+def avanzarI(n,k):
+    t.setheading(180)
+    t.forward(n*k)
+
+def avanzarA(n,k):
+    t.setheading(90)
+    t.forward(n*k)
+    
+def avanzarAb(n,k):
+    t.setheading(270)
+    t.forward(n*k)
+    
+def avanzar(n,k):
+    t.forward(n*k)
+
+def mover (x,y):
+    t.up()
+    t.goto(x,y)
+    t.down()
+    
+def nube (x,y,k):
+    t.setheading(90)
+    t.color("black")
+    
+    
+    t.up()   
+    t.goto(x,y+8)
+    t.begin_fill()
+    t.fillcolor("black")
+    t.down()
+def dino (x,y,k):
+    
+    t.setheading(90)
+    t.color("black")
+    
+    
+    t.up()  
+    t.goto(x,y)
+    t.begin_fill()
+    t.fillcolor("black")
+    t.down()
+    
+    avanzar(7,k)
+    t.left(90)
+    t.forward(k)
+    t.left(90)
+    t.forward(k*3)
+    t.right(90)
+    t.forward(k)
+    t.left(90)
+    t.forward(k)
+    t.right(90)
+    t.forward(k)
+    t.left(90)
+    t.forward(k)
+    t.right(90)
+    t.forward(k*2)
+    t.right(90)
+    t.forward(k)
+    t.left(90)
+    t.forward(k)
+    t.right(90)
+    t.forward(k)
+    t.left(90)
+    t.forward(k*2)
+    t.right(90)
+    t.forward(k)
+    t.left(90)
+    t.forward(k)
+    t.right(90)
+    t.forward(k)
+    t.left(90)
+    t.forward(k)
+    t.right(90)
+    t.forward(k*8) #
+    t.left(90)
+    t.forward(k)
+    t.right(90)
+    t.forward(k)
+    t.left(90)
+    t.forward(k*8)
+    t.left(90)
+    t.forward(k)
+    t.right(90)
+    t.forward(k)
+    t.left(90)
+    t.forward(k*5)
+    t.left(90)
+    t.forward(k*5)#boca
+    t.right(90)
+    t.forward(k)
+    t.right(90)
+    t.forward(k*3)
+    t.left(90)
+    t.forward(k)
+    t.left(90)
+    t.forward(k*4)
+    t.right(90)
+    t.forward(k*3)
+    t.right(90)
+    t.forward(k*2)
+    t.left(90)
+    t.forward(k*2)
+    t.left(90)
+    t.forward(k)
+    t.left(90)
+    t.forward(k)
+    t.right(90)
+    t.forward(k) # fin de bracito
+    t.right(90)
+    t.forward(k*4)
+    t.left(90)
+    t.forward(k)
+    t.right(90)
+    t.forward(k)
+    t.left(90)
+    t.forward(k)
+    t.right(90)
+    t.forward(k)
+    t.left(90)
+    t.forward(k)
+    t.right(90)
+    t.forward(k*4)
+    t.right(90)
+    t.forward(k)
+    t.left(90)
+    t.forward(k)
+    t.left(90)
+    t.forward(k*2)
+    t.left(90)
+    t.forward(k*3)
+    t.right(90)
+    t.forward(k)
+    t.left(90)
+    t.forward(k)
+    t.right(90)
+    t.forward(k)
+    t.left(90)
+    t.forward(k)
+    t.right(90)
+    t.forward((k//5)*2)
+
+    t.right(90)
+    t.forward(k)
+    t.left(90)
+    t.forward(k//5)
+    t.left(90)
+    t.forward(k)
+    t.right(90)
+    t.forward((k//5)*2)
+    
+    t.right(90)
+    t.forward(k)
+    t.left(90)
+    t.forward(k)
+    t.right(90)
+    t.forward(k)
+    t.left(90)
+    t.forward(k)
+    t.right(90)
+    t.forward(k*2)
+    t.right(90)
+    t.forward(k)
+    t.left(90)
+    t.forward(k)
+    t.left(90)
+    t.forward(k*2)
+    t.left(90)
+    t.forward(k*5)
+    t.right(90)
+    t.forward(k)
+    t.left(90)
+    t.forward(k)
+    t.right(90)
+    t.forward(k)
+    t.left(90)
+    t.forward(k)
+    t.right(90)
+    t.forward(k)
+    t.left(90)
+    t.forward(k)
+    t.right(90)
+    t.forward(k)
+    t.end_fill()
+
+    # ojos
+    t.up()
+    t.goto(x-12*k,y+14*k)
+    t.color("white")
+    t.setheading(180)
+    t.begin_fill()
+    t.fillcolor("white")    
+    t.down()
+    
+
+    t.forward(k)
+    t.left(90)
+    t.forward(k)
+
+    t.left(90)
+    t.forward(k)
+    t.left(90)
+    t.forward(k)
+    t.end_fill()
+def piso(x,y,k,g):
+    t.begin_fill()
+    t.color("black")
+    t.fillcolor("black")
+    mover(x,y)
+    avanzarD(k,1)
+    t.right(90)
+    t.forward(g)
+    t.right(90)
+    avanzarI(k,1)
+    t.right(90)
+    t.forward(g)
+    t.end_fill()
+def cactus(x,y,k):
+    t.speed(0)
+    mover(x,y)
+    t.begin_fill()
+    avanzarD(2,k)
+    avanzarA(10,k)
+    avanzarD(3,k)
+    escalarD(2,k//2)
+    avanzarA(4,k)
+    t.left(90)
+    t.forward(k//2)
+    escalarI(2,k//2)
+    avanzarI(1,k//2)
+    bajarI(2,k//2)
+    avanzarAb(2,k)
+    t.right(90)
+    t.forward(k*1)
+    t.right(90)
+    t.forward(6*k)
+    t.left(90)
+    t.forward(k//2)
+    escalarI(2,k//2)
+    avanzarI(1,k)
+    bajarI(2,k//2)
+    t.forward(k*8)
+    avanzarI(1,k)
+    avanzarA(2,k)
+    t.left(90)
+    t.forward(k//2)
+    escalarI(2,k//2)
+    avanzarI(1,k//2)
+    bajarI(2,k//2)
+    avanzarAb(4,k)
+    bajarD(2,k//2)
+    avanzarD(3,k)
+    avanzarAb(8,k)
+    avanzarD(2,k)
+    t.end_fill()
+def girasol (xi,yi,k):
+    turtle.shape("turtle")
+    turtle.speed(0)
+    turtle.fillcolor("brown")
+    # Cambia el color del centro del girasol a café más claro (RGB: 139, 69, 19)
+    turtle.penup()
+    turtle.goto(xi, yi)
+    turtle.fillcolor("#8B4513")  # Café más claro
+    turtle.begin_fill()
+    turtle.circle(0)
+    turtle.end_fill()
+
+    # Código del girasol (el que proporcionaste)
+    phi = 137.508 * (math.pi / 180.0)
+    for i in range(160 + 40):
+        r = k * math.sqrt(i)
+        theta = i * phi
+        x = r * math.cos(theta)+xi
+        y = r * math.sin(theta)+yi
+        turtle.penup()
+        turtle.goto(x, y)
+        turtle.setheading(i * 137.508)
+        turtle.pendown()
+        if i < 160:
+            turtle.stamp()
+        else:
+            turtle.fillcolor("yellow")
+            turtle.begin_fill()
+            turtle.right(20)
+            turtle.forward(40)
+            turtle.left(40)
+            turtle.forward(40)
+            turtle.left(140)
+            turtle.forward(40)
+            turtle.left(40)
+            turtle.forward(40)
+            turtle.end_fill()
+def tallo(x,y,g):
+    # Dibuja el tallo
+    t.speed(0)
+    t.fillcolor("green")  # Cambia el color del tallo a verde
+    t.penup()
+    t.goto(x, y)
+    t.down()
+    t.begin_fill()
+    t.setheading(315)
+    t.circle(500,45)
+    t.right(145)
+    t.forward(g)
+    t.setheading(0)
+    t.circle(500,-45)
+    t.end_fill()
+
+def circulo():
+    t.speed(1)
+    t.setheading(180)
+    t.circle(100,90)
+    t.setheading(0)
+    t.circle(100,90)
+    t.setheading(270)
+    t.circle(100,90)
+    t.setheading(180)
+    t.circle(100,90)
+
+t=turtle.Turtle()
+t.speed(0)
+t.color("black")
+wn = turtle.Screen()
+wn.setup(1.0, 1.0)
+wn.colormode(255)
+wn.bgcolor(229,255,204) # cielito asthetic
+
+
+tallo(-550,20,10)
+
+dino(200,-200,25)
+piso(-500,-350,1000,10) # principal
+#pisitos
+piso(-450,-380,100,2)
+piso(300,-380,50,2)
+piso(-400,-410,30,2)
+piso(-0,-430,100,2)
+piso(-300,-400,100,2)
+t.up()
+t.goto(350,100)
+t.down
+t.color("black")  # Color del texto
+t.write("UNA FLOR PARA TI BEBE <3 ",align="center", font=("Comic Sans MS", 30, "normal"))
+
+# cactus
+cactus(-300,-390,10)
+cactus(440,-370,10)
+#tallo
+
+# girasol
+girasol(-550,20,3)
+t.hideturtle()
+
+
+
+
